@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get the reference to the website element
   const websiteElement = document.getElementById("h1")
-  const text = "MY NAME IS RAZIA"
+  const text = "THIS IS MY PORTFLIO"
   let currentIndex = 0
   let isDeleting = false
 
