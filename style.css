@@ -1,9 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&family=Patua+One&family=Vina+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+}
+/* body {
+  overflow-x: hidden !important;
+} */
+.wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+}
 main {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(images/hindu\ kush) !important;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(images/B&W.jpg) !important;
+  background-repeat: no-repeat !important;
 
   background-size: cover !important;
-  background-repeat: no-repeat;
-  background-position: top !important;
+
+  background-position: center !important;
+  /* border-radius: 50%; */
 }

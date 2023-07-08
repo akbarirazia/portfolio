@@ -1,7 +1,7 @@
 // Wait for the page to finish loading
 document.addEventListener("DOMContentLoaded", function () {
   // Get the reference to the website element
-  const websiteElement = document.getElementById("h1")
+  // const websiteElement = document.getElementById("h1")
   const text = "THIS IS MY PORTFLIO"
   let currentIndex = 0
   let isDeleting = false
@@ -35,3 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start typing and deleting
   typeAndDelete()
 })
+// var all = document.getElementsByTagName("*"),
+//   i = 0,
+//   rect,
+//   docWidth = document.documentElement.offsetWidth
+// for (; i < all.length; i++) {
+//   rect = all[i].getBoundingClientRect()
+//   if (rect.right > docWidth || rect.left < 0) {
+//     console.log(all[i])
+//     all[i].style.borderTop = "1px solid red"
+//   }
+// }
+// window.addEventListener("scroll", function () {
+//   var navbar = document.getElementById("navbar")
+//   var content = document.getElementsByTagName("*")
+
+//   if (window.pageYOffset > navbar.offsetHeight) {
+//     content.classList.add("blur")
+//   } else {
+//     content.classList.remove("blur")
+//   }
+// })

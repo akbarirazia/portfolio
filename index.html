@@ -9,17 +9,336 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Patua+One&family=Vina+Sans&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <div class="h-screen">
-      <main class="w-screen bg-black h-screen flex justify-center items-center">
-        <h1 class="text-5xl text-white font-extrabold" id="h1"></h1>
+    <nav
+      class="h-screen fixed w-1/12 flex flex-col justify-center items-center ms-5 lg:ms-0"
+    >
+      <ul>
+        <a href="https://github.com/akbarirazia"
+          ><li
+            class="p-5 h-6 w-6 bg-slate-200 flex justify-center items-center m-5 rounded cursor-pointer hover:bg-slate-400"
+          >
+            <i class="fa-brands fa-github"></i>
+          </li>
+        </a>
+        <a href="mailto:akbariharis14@gmail.com">
+          <li
+            class="p-5 h-6 w-6 bg-slate-200 flex justify-center items-center m-5 rounded cursor-pointer hover:bg-slate-400"
+          >
+            <i class="fa-solid fa-envelope"></i></li
+        ></a>
+        <a href="https://www.linkedin.com/in/razia-akbari-19b5271b0/">
+          <li
+            class="p-5 h-6 w-6 bg-slate-200 flex justify-center items-center m-5 rounded cursor-pointer hover:bg-slate-400"
+          >
+            <i class="fa-brands fa-linkedin"></i></li
+        ></a>
+        <a href="https://twitter.com/AkbariRazia">
+          <li
+            class="p-5 h-6 w-6 bg-slate-200 flex justify-center items-center m-5 rounded cursor-pointer hover:bg-slate-400"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+        </a>
+      </ul>
+    </nav>
+    <nav
+      class="h-1/12 fixed w-screen pt-5 flex justify-center items-center"
+      id="navbar"
+    >
+      <ul
+        class="flex justify-center items-center gap-4 lg:gap-10 border-2 p-3 px-5 rounded-full backdrop-blur-sm"
+      >
+        <li><a href="#home" class="text-gray-300">Home</a></li>
+        <li><a href="#about" class="text-gray-300">About</a></li>
+        <li><a href="#port" class="text-gray-300">Portfolio</a></li>
+        <li><a href="#contact" class="text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
+    <div
+      class="w-screen h-screen flex justify-center items-center wrapper"
+      id="home"
+    >
+      <main
+        class="w-2/3 bg-black h-2/3 flex justify-center items-center flex-col rounded-3xl p-2 m-0"
+      >
+        <h1 class="text-5xl text-white font-extrabold text-center" id="h1">
+          Hi, <br />
+          my name is <span class="">Razia Akbari!</span>
+        </h1>
+        <br />
+        <h2 class="text-3xl text-white text-center mx-5 font-thin">
+          I'm based in Kabul, Afghanistan
+        </h2>
       </main>
     </div>
+    <section
+      class="w-screen h-auto bg-gray-100 flex justify-center items-center flex-col pt-10"
+      id="about"
+    >
+      <br />
+      <br />
+      <h2 class="underline-offset-8 underline text-lg font-semibold">
+        About Me
+      </h2>
+      <br />
+      <br />
+      <div class="flex flex-wrap justify-center w-1/2 items-center mb-24">
+        <div class="lg:w-1/2 flex justify-center sm:mb-7 lg:m-0">
+          <img
+            src="images/Razia half even.jpg"
+            class="rounded-full h-48 w-48"
+          />
+        </div>
+
+        <div class="lg:w-1/2 sm:2/3 mt-7">
+          <span class="text-center"
+            >It's
+            <span class="font-semibold tracking-widest">RAZIA,</span>
+            herself!</span
+          >
+          <p>
+            I'm a 20-year-old dynamo hailing from the beautiful land of
+            Nangarhar, Afghanistan. Currently, I'm juggling two exciting worlds:
+            medicine and computer science. Yep, you heard that right - I'm on a
+            mission to heal both humans and machines!
+            <br />
+            I'm an INFJ/INTJ combo: a natural leader, advocate, and mastermind!
+            Science backs me up on this one, so who am I to argue with that?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-screen h-auto bg-gray-100 flex justify-center items-center flex-col py-10"
+    >
+      <br />
+      <h3 class="underline-offset-8 underline text-lg font-semibold">
+        Skills & Interests
+      </h3>
+
+      <br />
+
+      <br />
+      <div class="w-2/3 flex gap-5 justify-center lg:gap-16 flex-wrap">
+        <ul class="flex gap-4 flex-wrap justify-center flex-col lg:me-10">
+          <p>Hard Skills</p>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-html5 fa-lg pe-3" style="color: #e0e9e9"></i
+            >HTML5
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-css3 pe-2"></i>
+            CSS3, CSS
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-square-js pe-2"></i>JavaScript
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-bootstrap pe-2"></i>Bootstrap
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <img src="images/tailwind-css.svg" alt="Tailwindcss" class="pe-1" />
+            Tailwindcss
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-java fa-lg pe-3"></i>Java
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-brands fa-github pe-2"></i>Git/Github
+          </li>
+        </ul>
+        <!--Soft Skills-->
+        <ul class="flex gap-4 flex-wrap justify-center flex-col">
+          <p>Soft Skills</p>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-brain pe-2"></i>Emotional Intelligence
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-brain pe-2"></i>
+            Critical thinking
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-plus pe-2"></i>Creative
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-book-open-reader pe-2"></i>Leadership
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-magnet pe-2"></i>Adaptablity
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-bullseye pe-2"></i>Goal oriented
+          </li>
+        </ul>
+        <!--languages-->
+        <ul class="flex gap-4 flex-wrap justify-center items-center flex-col">
+          <p>Human Langauges I Speak</p>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-language pe-2"></i>Pashto - Native Fluency
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-language pe-2"></i>
+            Persian/Dari - Native Fluency
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-language pe-2"></i>
+            English - Full Proficiency
+          </li>
+          <li
+            class="bg-slate-950 p-2 text-white rounded text-sm w-28 flex justify-center items-center"
+          >
+            <i class="fa-solid fa-language pe-2"></i>
+            Turkish - Intermediate Proficiency
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Portfolio-->
+    <section
+      id="Portfolio"
+      class="w-screen bg-black flex justify-center py-20 flex-col items-center"
+    >
+      <h3 class="underline-offset-8 underline text-lg font-semibold text-white">
+        My Web development Portfolio
+      </h3>
+      <br />
+      <br />
+
+      <div id="cards" class="flex justify-center gap-5">
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!--Second card-->
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="images/razia blury edited.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>
