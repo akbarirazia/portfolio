@@ -20,5 +20,7 @@ main {
   background-size: cover !important;
 
   background-position: center !important;
+  background-attachment: fixed !important;
+
   /* border-radius: 50%; */
 }
