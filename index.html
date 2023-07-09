@@ -103,13 +103,15 @@
           />
         </div>
 
-        <div class="lg:w-1/2 sm:2/3 mt-7">
-          <span class="text-center"
-            >It's
-            <span class="font-semibold tracking-widest">RAZIA,</span>
-            herself!</span
-          >
+        <div
+          class="lg:w-1/2 sm:2/3 mt-5 flex flex-col justify-center items-center"
+        >
           <p>
+            It's
+            <span class="font-semibold tracking-widest">RAZIA,</span>
+            herself!
+
+            <br />
             I'm a 20-year-old dynamo hailing from the beautiful land of
             Nangarhar, Afghanistan. Currently, I'm juggling two exciting worlds:
             medicine and computer science. Yep, you heard that right - I'm on a
@@ -117,7 +119,28 @@
             <br />
             I'm an INFJ/INTJ combo: a natural leader, advocate, and mastermind!
             Science backs me up on this one, so who am I to argue with that?
+            <br />
+            <br />
+            <span class="font-bold">Wanna know more?</span>
+            <br />
+
+            Click on the magic button below - no scary thing, it's only a CV :)
           </p>
+          <br />
+          <a href="images/RAZIA-AKBARI.pdf" download="Razia's CV">
+            <button
+              class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+            >
+              <svg
+                class="fill-current w-4 h-4 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+              <span>Download</span>
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -249,7 +272,7 @@
       <br />
       <br />
 
-      <div id="cards" class="flex justify-center gap-10 flex-wrap w-3/4">
+      <div id="cards" class="flex justify-center gap-10 flex-wrap w-2/3">
         <!--First Card-->
         <div
           class="max-w-sm bg-gray-200 border border-gray-200 rounded-lg shadow"
@@ -259,7 +282,7 @@
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
                 Invoice App
               </h5>
             </a>
@@ -310,7 +333,7 @@
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
                 Bookstore Landing Page
               </h5>
             </a>
@@ -359,7 +382,7 @@
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-xl font-bold text-gray-900 tracking-wider">
                 Personal Portfolio
               </h5>
             </a>
@@ -405,7 +428,7 @@
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
                 Responsive Album
               </h5>
             </a>
@@ -450,7 +473,7 @@
           </a>
           <div class="p-5">
             <a>
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">
                 Rock, Paper, Scissors Game
               </h5>
             </a>
@@ -487,12 +510,104 @@
       </div>
     </section>
     <section
-      class="w-screen bg-slate-600 flex justify-center py-20 flex-col items-center"
-      id="resume"
+      class="w-screen bg-slate-600 flex justify-center py-20 flex-col items-center h-auto"
+      id="contact"
     >
-      <h3 class="underline-offset-8 underline text-lg font-semibold text-white">
-        Fun Facts About Me
+      <h3
+        class="underline-offset-8 underline text-lg font-semibold text-white tracking-wider"
+      >
+        Contact Me
       </h3>
+      <br />
+      <div class="sm:w-1/2 lg:w-1/3 p-10 rounded-3xl text-center bg-gray-900">
+        <form id="contact-form">
+          <!--Name-->
+
+          <label
+            for="website-admin"
+            class="block mb-2 text-sm font-medium text-white"
+            >Your Beautiful Name</label
+          >
+          <div class="flex mb-5">
+            <span
+              class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+                />
+              </svg>
+            </span>
+            <input
+              type="text"
+              id="name"
+              class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5"
+              placeholder="Bonnie Green"
+              required
+            />
+          </div>
+
+          <!--Email-->
+
+          <label
+            for="email-address-icon"
+            class="block mb-2 text-sm font-medium text-white"
+            >Your Email
+            <address></address
+          ></label>
+          <div class="relative mb-5">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+              placeholder="name@flowbite.com"
+              required
+            />
+          </div>
+          <!--Message-->
+
+          <label for="message" class="block mb-2 text-sm font-medium text-white"
+            >Your message</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Write me a text..."
+            required
+          ></textarea>
+          <button
+            class="bg-white hover:bg-gray-400 text-black py-1 px-6 rounded-full mt-5"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </section>
 
     <script src="index.js"></script>
