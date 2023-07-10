@@ -103,41 +103,62 @@
 
 // autoTypeAndDelete()
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault() // Prevent default form submission
+// document
+//   .getElementById("contact-form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault() // Prevent default form submission
 
-    // Get input field values
-    var name = document.getElementById("name").value
-    var email = document.getElementById("email").value
+//     // Get input field values
+//     var name = document.getElementById("name").value
+//     var email = document.getElementById("email").value
 
-    var message = document.getElementById("message").value
+//     var message = document.getElementById("message").value
 
-    // Create JSON object with form data
-    var formData = {
-      name: name,
-      email: email,
-      message: message,
-    }
+//     // Create JSON object with form data
+//     var formData = {
+//       name: name,
+//       email: email,
+//       message: message,
+//     }
 
-    // Send POST request to server-side script
-    fetch("send_email.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+//     // Send POST request to server-side script
+//     fetch("send_email.php", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(formData),
+//     })
+//       .then(function (response) {
+//         return response.json()
+//       })
+//       .then(function (data) {
+//         // Handle response from server-side script (e.g., display success message)
+//         console.log(data)
+//       })
+//       .catch(function (error) {
+//         // Handle error
+//         console.error(error)
+//       })
+//   })
+function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  }
+
+  const serviceID = "service_gbeqyjq"
+  const templateID = "template_cehrdzh"
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = ""
+      document.getElementById("email").value = ""
+      document.getElementById("message").value = ""
+      console.log(res)
+      alert("Your message sent successfully!!")
     })
-      .then(function (response) {
-        return response.json()
-      })
-      .then(function (data) {
-        // Handle response from server-side script (e.g., display success message)
-        console.log(data)
-      })
-      .catch(function (error) {
-        // Handle error
-        console.error(error)
-      })
-  })
+    .catch((err) => console.log(err))
+}
