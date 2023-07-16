@@ -16,6 +16,7 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(images/B&W.jpg) !important;
   background-repeat: no-repeat !important;
+  /* filter: grayscale(1); */
 
   background-size: cover !important;
 
@@ -23,4 +24,11 @@ main {
   background-attachment: fixed !important;
 
   /* border-radius: 50%; */
+}
+
+.scrolled {
+  border-color: black !important; /* Border color when scrolled to the 'about' section */
+}
+.white {
+  color: white;
 }

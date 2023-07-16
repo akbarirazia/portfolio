@@ -162,3 +162,23 @@ function sendMail() {
     })
     .catch((err) => console.log(err))
 }
+
+// window.addEventListener("scroll", function () {
+//   var navbar = document.getElementById("ul")
+//   var aboutSection = document.getElementById("about")
+
+//   // Get the position of the 'about' section relative to the viewport
+//   var rect = aboutSection.getBoundingClientRect()
+
+//   // Check if the top of the 'about' section is visible in the viewport
+//   if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+//     console.log("this is the about section")
+//     navbar.classList.add("scrolled")
+//     navbar.querySelectorAll("a")
+//     navbar.forEach((item) => {
+//       item.classList.add("white")
+//     })
+//   } else {
+//     navbar.classList.remove("scrolled")
+//   }
+// })
