@@ -121,7 +121,12 @@
 //       message: message,
 //     }
 
-function sendMail() {
+let sendMessage = document.getElementById("sendMessage")
+sendMessage.addEventListener("click", (e) => {
+  e.preventDefault()
+  sendMail()
+})
+function sendMail(e) {
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
