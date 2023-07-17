@@ -25,10 +25,6 @@ main {
 
   /* border-radius: 50%; */
 }
-
-.scrolled {
-  border-color: black !important; /* Border color when scrolled to the 'about' section */
-}
-.white {
-  color: white;
+#navbar {
+  z-index: 999;
 }

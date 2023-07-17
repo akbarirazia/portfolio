@@ -121,26 +121,6 @@
 //       message: message,
 //     }
 
-//     // Send POST request to server-side script
-//     fetch("send_email.php", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(formData),
-//     })
-//       .then(function (response) {
-//         return response.json()
-//       })
-//       .then(function (data) {
-//         // Handle response from server-side script (e.g., display success message)
-//         console.log(data)
-//       })
-//       .catch(function (error) {
-//         // Handle error
-//         console.error(error)
-//       })
-//   })
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
@@ -163,22 +143,47 @@ function sendMail() {
     .catch((err) => console.log(err))
 }
 
-// window.addEventListener("scroll", function () {
-//   var navbar = document.getElementById("ul")
-//   var aboutSection = document.getElementById("about")
-
-//   // Get the position of the 'about' section relative to the viewport
-//   var rect = aboutSection.getBoundingClientRect()
-
-//   // Check if the top of the 'about' section is visible in the viewport
-//   if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-//     console.log("this is the about section")
-//     navbar.classList.add("scrolled")
-//     navbar.querySelectorAll("a")
-//     navbar.forEach((item) => {
-//       item.classList.add("white")
-//     })
-//   } else {
-//     navbar.classList.remove("scrolled")
-//   }
+// window.addEventListener("scroll", (e) => {
+//   console.log(e.target.)
 // })
+const elements = document.querySelectorAll(".section")
+
+// Function to check which element is in view
+function checkInView() {
+  const scrollPosition = window.scrollY
+
+  elements.forEach((element) => {
+    const elementTop = element.offsetTop
+    const elementBottom = elementTop + element.offsetHeight
+
+    if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+      if (element) {
+        // Element with ID "skill log" exists
+
+        if (element.id == "about" || element.id == "skills") {
+          let ul = document.getElementById("ul")
+          ul.style.border = "2px solid black"
+
+          var anchor = ul.getElementsByTagName("a")
+          for (var i = 0; i < anchor.length; i++) {
+            anchor[i].style.color = "black"
+          }
+        } else {
+          let ul = document.getElementById("ul")
+          ul.style.border = "2px solid white"
+          var anchor = ul.getElementsByTagName("a")
+          for (var i = 0; i < anchor.length; i++) {
+            anchor[i].style.color = "white"
+            // anchor[i].style.zIndex = "99999"
+          }
+        }
+      } else {
+        // Element with ID "skill log" does not exist
+        console.log("Element with ID 'skill log' not found!")
+      }
+    }
+  })
+}
+
+// Call the function on scroll event
+window.addEventListener("scroll", checkInView)
